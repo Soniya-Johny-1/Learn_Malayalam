@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learn|Malayalam</title>
+
+  <!-- Responsive viewport tag, tells small screens that it's responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Normalize.css, a cross-browser reset file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <!-- Stylesheets -->
+ 
+  <style type="text/css">
+  	/* CSS Document */
+
+main .row {
+	margin-bottom: 20px;
+}
+
+.header {
+	background-color: #9cef0c;
+}
+
+.page_title {
+	width: 1000px;
+	padding:5px 5px;
+	margin:0 auto;
+}
+
+/* How do I decrease line height between .page_title h1 and h4*/
+.page_title h1 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.page_title h1, h4 {
+	padding: 0;
+	margin: 0;
+}
+/* Could I add padding here an have the text within the div somehow ignore the padding?*/
+.character_card {
+	border: solid lightgray 1px;
+	margin: 20px 0;
+}
+
+.character_card img {
+	width: 100%;
+}
+
+.character_card h4, h2 {
+	margin: 10px 10px;
+}
+
+  </style>
+  <style type="text/css">
+  	/* CSS Document */
+
+* {
+	box-sizing: border-box;
+	
+}
+/* Grid measurements:
+ *
+ *   960px wide including 12 gutters (half gutters on both edges)
+ *
+ *   60px columns (12)
+ *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
+ *
+ *
+ *   For smaller screens, we always want 20px of padding on either side,
+ *   so 960 + 20 + 20 => 1000px
+ *
+ **/
+
+.row {
+	max-width: 1000px;
+	padding: 0 20;
+	margin: 0 auto;
+}
+
+/*Clearfix*/
+
+.row::before, .row::after{
+	display: table;
+	content: '';
+}
+
+.row::after {
+	clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12{
+	float: left;
+	padding:0 1.04166666%;
+}
+
+/*Mobile defaults - This isn't quite clear to me*/
+
+.col-3, .col-4, .col-6, .col-12 {
+	width: 100%
+}
+
+/* non-mobile, grid */
+@media only screen and (min-width: 640px){
+	
+	.col-3 {
+		width: 25%;
+	}
+	
+	.col-4 {
+		width: 33.33%
+	}
+	
+	.col-6 {
+		width: 50%;
+	}
+	
+	.col-12 {
+		width: 100%
+	}
+
+}
+
+
+  </style>
+</head>
+<body>
+	<main>
+	<header class="header">
+		<div class="page_title">
+			<div class="page_title"><h1>Speak Malayalam</h1> <h4>check the pronounciation</h4></div>
+		</div>	
+	</header>
+	
+	
+	<!--When sizing the viewport down, "poe" is displaced to the right before proper responsive view. -->
+	<div class="row">
+		<div class="col-4">
+		<div class="character_card"><a href="/users/foods"> <img src="/images/food.png"></a>
+			<h2>Foods</h2>
+			<h4>some food items</h4>
+		</div>
+		</div>
+	<div class="col-4">
+		<div class="character_card"><a href="/users/animals"><img src= "/images/animals.png"></a>	
+			<h2>Animals</h2>
+			<h4>some common animals</h4>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="character_card"><a href="/users/directions"><img src= "/images/direction.png"></a>	
+			<h2>Directions</h2>
+			<h4>South.North.East.West</h4>
+		</div>
+	</div>
+	</div>	
+	<div class="row">
+
+	<div class="col-4">
+		<div class="character_card"><a href="/users/emotions"> <img src="/images/emotions.png"></a>
+			<h2>Emotions</h2>
+			<h4>Happy.sad.angry</h4>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="character_card"><a href="/users/family"><img src="/images/familiy.png">	</a>
+			<h2>Family</h2>
+			<h4>Dad,Mom,Brother,Sister</h4>
+		
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="character_card"><a href="/users/colors"><img src="/images/color.png">	</a>
+			<h2>Colors</h2>
+			<h4>Some common colors</h4>
+		</div>
+	</div>
+		
+	</div>
+	<div class="row">
+
+	<div class="col-4">
+		<div class="character_card"> <a href="/users/number"><img src="/images/numbers.png"></a>
+			<h2>Numbers</h2>
+			<h4>Commonly used numbers</h4>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="character_card"> <a href="/users/pronouns"><img src="/images/pronoun.png">	</a>
+			<h2>Pronoun</h2>
+			<h4>Some commonly used pronouns</h4>
+		
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="character_card"><a href="/users/greetings"><img src="/images/greetings.png">	</a>
+			<h2>Greetings</h2>
+			<h4>Some commonly used Greetings</h4>
+		</div>
+	</div>
+		
+	</div>
+	</main>
+</body>
+</html>
