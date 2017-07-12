@@ -12,6 +12,12 @@ Learn|Malayalam is a digital tutor,which will help you to learn malayalam langua
 ## Dependencies
 - Node 8.1.2+
 - Mongodb
+### Run
+```bash
+node app
+```
+## Mobile friendly
+![](https://raw.githubusercontent.com/sreehari1997/Learn_Malayalam/master/smartphone/mob.jpg)
 
 
 
