@@ -1,7 +1,7 @@
 # Learn Malayalam
 
 Learn|Malayalam is a digital tutor,which will help you to learn malayalam language from base.
-![](https://www.dropbox.com/s/tydj1miy1aor010/welcome.png?dl=0)
+![](https://raw.githubusercontent.com/sreehari1997/Learn_Malayalam/master/laptop/welcome.png)
 ## Features
 ### Basics of malayalam
 ### How to pronounce
