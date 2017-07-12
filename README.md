@@ -14,6 +14,7 @@ Learn|Malayalam is a digital tutor,which will help you to learn malayalam langua
 - Mongodb
 ### Run
 ```bash
+npm install
 node app
 ```
 ## Mobile friendly
